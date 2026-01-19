@@ -11,79 +11,79 @@ export default function Galerie() {
 
   // Array de imágenes con rutas relativas desde app/galerie/
   const galleryImages = [
-    { 
-      id: 1, 
-      title: "Monument du Dr. de la Ferrière", 
-      category: "monument",
-      src: "../images/1.jpg",
-      width: 800,
-      height: 600,
-      description: "Monument situé au Cimetière de l'Est à Nice"
-    },
-    { 
-      id: 2, 
-      title: "Cours de Yoga", 
-      category: "yoga",
-      src: "../images/2.jpg",
-      width: 800,
-      height: 600,
-      description: "Session de yoga selon la méthode Ferriz-Ferrière"
-    },
-    { 
-      id: 3, 
-      title: "Conférence 2022", 
-      category: "conferences",
-      src: "../images/3.jpg",
-      width: 800,
-      height: 600,
-      description: "Conférence sur l'œuvre du Dr. de la Ferrière"
-    },
-    { 
-      id: 4, 
-      title: "Séminaire Nice", 
-      category: "seminars",
-      src: "../images/4.jpg",
-      width: 800,
-      height: 600,
-      description: "Séminaire international organisé à Nice"
-    },
-    { 
-      id: 5, 
-      title: "Centenaire 2016", 
-      category: "events",
-      src: "../images/5.jpg",
-      width: 800,
-      height: 600,
-      description: "Célébration du centenaire de la naissance"
-    },
-    { 
-      id: 6, 
-      title: "Inauguration Plaque", 
-      category: "events",
-      src: "../images/6.jpg",
-      width: 800,
-      height: 600,
-      description: "Inauguration de la plaque commémorative"
-    },
-    { 
-      id: 7, 
-      title: "Atelier Alimentation", 
-      category: "workshops",
-      src: "../images/7.jpg",
-      width: 800,
-      height: 600,
-      description: "Atelier sur l'alimentation végétarienne"
-    },
-    { 
-      id: 8, 
-      title: "Peintures du Dr. de la Ferrière", 
-      category: "art",
-      src: "../images/8.jpg",
-      width: 800,
-      height: 600,
-      description: "Œuvres artistiques du Dr. Serge Raynaud de la Ferrière"
-    },
-  ];
+  { 
+    id: 1, 
+    title: "Monument du Dr. de la Ferrière", 
+    category: "monument",
+    src: "/images/1.jpg",
+    width: 800,
+    height: 600,
+    description: "Monument situé au Cimetière de l'Est à Nice"
+  },
+  { 
+    id: 2, 
+    title: "Cours de Yoga", 
+    category: "yoga",
+    src: "/images/2.jpg",
+    width: 800,
+    height: 600,
+    description: "Session de yoga selon la méthode Ferriz-Ferrière"
+  },
+  { 
+    id: 3, 
+    title: "Conférence 2022", 
+    category: "conferences",
+    src: "/images/3.jpg",
+    width: 800,
+    height: 600,
+    description: "Conférence sur l'œuvre du Dr. de la Ferrière"
+  },
+  { 
+    id: 4, 
+    title: "Séminaire Nice", 
+    category: "seminars",
+    src: "/images/4.jpg",
+    width: 800,
+    height: 600,
+    description: "Séminaire international organisé à Nice"
+  },
+  { 
+    id: 5, 
+    title: "Centenaire 2016", 
+    category: "events",
+    src: "/images/5.jpg",
+    width: 800,
+    height: 600,
+    description: "Célébration du centenaire de la naissance"
+  },
+  { 
+    id: 6, 
+    title: "Inauguration Plaque", 
+    category: "events",
+    src: "/images/6.jpg",
+    width: 800,
+    height: 600,
+    description: "Inauguration de la plaque commémorative"
+  },
+  { 
+    id: 7, 
+    title: "Atelier Alimentation", 
+    category: "workshops",
+    src: "/images/7.jpg",
+    width: 800,
+    height: 600,
+    description: "Atelier sur l'alimentation végétarienne"
+  },
+  { 
+    id: 8, 
+    title: "Peintures du Dr. de la Ferrière", 
+    category: "art",
+    src: "/images/8.jpg",
+    width: 800,
+    height: 600,
+    description: "Œuvres artistiques du Dr. Serge Raynaud de la Ferrière"
+  },
+];
 
   const categories = [
     { id: 'all', name: 'Toutes les photos' },

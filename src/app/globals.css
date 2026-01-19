@@ -1870,12 +1870,15 @@ a {
 }
 
 .method-quote {
-  background: #f8f8f8;
-  padding: 2rem;
-  border-left: 4px solid #d4af37;
+  background: #fff8e1;
+  color: #000000;        
+  padding: 1.5rem;
+  border-radius: 8px;
   margin: 2rem 0;
+  border-left: 4px solid #d4af37;
   font-style: italic;
 }
+
 
 .affiliation-notice {
   background: #fff8e1;

@@ -52,7 +52,7 @@ export default function Home() {
         <div className="container">
           <h2>Découvrez nos activités</h2>
           <div className="links-grid">
-            <a href="/yoga" className="quick-link">
+            <a href="/yoga/methode/" className="quick-link">
               <h3>Yoga</h3>
               <p>Découvrez nos cours et la méthode Ferriz-Ferrière</p>
             </a>
@@ -62,7 +62,7 @@ export default function Home() {
               <p>Explorez l'héritage du Dr de la Ferrière</p>
             </a>
             
-            <a href="/galerie" className="quick-link">
+            <a href="/galeria" className="quick-link">
               <h3>Galerie</h3>
               <p>Photos et documents historiques</p>
             </a>
