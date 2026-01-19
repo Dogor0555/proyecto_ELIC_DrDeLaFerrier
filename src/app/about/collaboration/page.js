@@ -32,7 +32,7 @@ export default function Collaboration() {
 
             <div className="collaboration-card">
               <div className="card-logo">
-                <img src="/logos/logofiss.jpg" alt="Logo Fondation FISS" />
+                <img src="/logos/logofiss.png" alt="Logo Fondation FISS" />
               </div>
               <h3>Fondation FISS</h3>
               <p>Fédération Internationale de Sociétés Scientifiques</p>
