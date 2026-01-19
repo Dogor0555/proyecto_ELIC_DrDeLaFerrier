@@ -22,24 +22,36 @@ export default function Collaboration() {
             </div>
 
             <div className="collaboration-card">
+              <div className="card-logo">
+                <img src="/logos/magna.jpeg" alt="Logo Centre Culturel de Yoga Jñanakanda" />
+              </div>
               <h3>Fondation Magna Fraternitas Universalis</h3>
               <p><strong>Siège mondial :</strong> Lima, Pérou</p>
               <p>Institution dédiée à la diffusion de l'œuvre du Dr. Serge Raynaud de la Ferrière à l'échelle mondiale.</p>
             </div>
 
             <div className="collaboration-card">
+              <div className="card-logo">
+                <img src="/logos/fiss.png" alt="Logo Fondation FISS" />
+              </div>
               <h3>Fondation FISS</h3>
               <p>Fédération Internationale de Sociétés Scientifiques</p>
               <p>Fondée en 1947 à Paris par le Dr. de la Ferrière, transférée à Nice en 1960.</p>
             </div>
 
             <div className="collaboration-card">
+               <div className="card-logo">
+                <img src="/logos/iici_Invesciencias.jpg" alt="Logo Fondation FISS" />
+              </div> 
               <h3>Fondation INVESCIENCIAS</h3>
               <p>Institut de Recherches et d'Applications Scientifiques et Technologiques</p>
               <p>Dédiée à la recherche scientifique et technologique.</p>
             </div>
 
             <div className="collaboration-card">
+              <div className="card-logo">
+                <img src="/logos/elic.png" alt="Logo Fondation ELIC" />
+              </div>
               <h3>Fondation ELIC</h3>
               <p>Écoles Libres de Recherche Scientifique pour Enfants</p>
               <p>En collaboration avec l'association ELIC France.</p>
