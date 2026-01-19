@@ -242,6 +242,15 @@ export default function Navbar() {
               Événements historiques
             </Link>
           </li>
+          <li className="mobile-nav-item">
+            <Link
+              href="/galeria"
+              className={`mobile-nav-link ${isActive('/galeria') ? 'active' : ''}`}
+              onClick={closeSubmenus}
+            >
+              Galerie
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
