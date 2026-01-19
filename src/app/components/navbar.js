@@ -67,17 +67,19 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item dropdown">
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('about')}
+              onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
+            >
               <button 
                 className={`nav-link ${isActive('/about') || activeSubmenu === 'about' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('about')}
-                onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('about')}
-                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
-
               >
                 Qui sommes-nous?
                 <span className="dropdown-arrow">▼</span>
               </button>
+
               <ul className={`dropdown-menu ${activeSubmenu === 'about' ? 'open' : ''}`}>
                 <li><Link href="/about/objectives" className="dropdown-link" onClick={closeSubmenus}>Objectifs</Link></li>
                 <li><Link href="/about/collaboration" className="dropdown-link" onClick={closeSubmenus}>Collaboration</Link></li>
@@ -85,16 +87,19 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('vie')}
+              onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
+            >
               <button 
                 className={`nav-link ${isActive('/vie-oeuvre') || activeSubmenu === 'vie' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('vie')}
-                onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('vie')}
-                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
               >
                 Vie et œuvre du Dr de la Ferrière
                 <span className="dropdown-arrow">▼</span>
               </button>
+
               <ul className={`dropdown-menu ${activeSubmenu === 'vie' ? 'open' : ''}`}>
                 <li><Link href="/vie-oeuvre/figure" className="dropdown-link" onClick={closeSubmenus}>Biographie</Link></li>
                 <li><Link href="/vie-oeuvre/retraite" className="dropdown-link" onClick={closeSubmenus}>Retraite à Nice</Link></li>
@@ -104,22 +109,27 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
+
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('yoga')}
+              onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
+            >
               <button 
                 className={`nav-link ${isActive('/yoga') || activeSubmenu === 'yoga' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('yoga')}
-                onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('yoga')}
-                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
               >
                 Activités YOGA
                 <span className="dropdown-arrow">▼</span>
               </button>
+
               <ul className={`dropdown-menu ${activeSubmenu === 'yoga' ? 'open' : ''}`}>
                 <li><Link href="/yoga/introduction" className="dropdown-link" onClick={closeSubmenus}>Introduction Yoga</Link></li>
                 <li><Link href="/yoga/cours" className="dropdown-link" onClick={closeSubmenus}>Cours et informations</Link></li>
                 <li><Link href="/yoga/methode" className="dropdown-link" onClick={closeSubmenus}>La méthode</Link></li>
               </ul>
             </li>
+
 
             <li className="nav-item">
               <Link 
