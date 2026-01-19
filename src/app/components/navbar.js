@@ -72,6 +72,8 @@ export default function Navbar() {
                 className={`nav-link ${isActive('/about') || activeSubmenu === 'about' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('about')}
                 onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('about')}
+                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
+
               >
                 Qui sommes-nous?
                 <span className="dropdown-arrow">▼</span>
@@ -88,6 +90,7 @@ export default function Navbar() {
                 className={`nav-link ${isActive('/vie-oeuvre') || activeSubmenu === 'vie' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('vie')}
                 onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('vie')}
+                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
               >
                 Vie et œuvre du Dr de la Ferrière
                 <span className="dropdown-arrow">▼</span>
@@ -106,6 +109,7 @@ export default function Navbar() {
                 className={`nav-link ${isActive('/yoga') || activeSubmenu === 'yoga' ? 'active' : ''}`}
                 onClick={() => toggleSubmenu('yoga')}
                 onMouseEnter={() => !isMobileMenuOpen && setActiveSubmenu('yoga')}
+                onMouseLeave={() => !isMobileMenuOpen && setActiveSubmenu(null)}
               >
                 Activités YOGA
                 <span className="dropdown-arrow">▼</span>
