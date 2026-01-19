@@ -13,6 +13,9 @@ export default function Collaboration() {
 
           <div className="collaboration-grid">
             <div className="collaboration-card">
+              <div className="card-logo">
+                <img src="/logos/jnanakanda.png" alt="Logo Centre Culturel de Yoga Jñanakanda" />
+              </div>
               <h3>Centre Culturel de Yoga Jñanakanda</h3>
               <p><strong>Siège :</strong> Caracas, Venezuela</p>
               <p>Centre fondé en 1959 dédié à l'enseignement du yoga selon la méthode Ferriz-Ferrière.</p>
