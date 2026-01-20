@@ -18,7 +18,7 @@ const biographieSRF = [
     titre: "études et formation",
     description:
       "À 14 ans, il commence des études universitaires et en 1935, il obtient le titre d’Ingénieur des Mines à Bruxelles, puis ses doctorats en Médecine, en Sciences, en Psychologie, en Théologie, en Philosophie et en Biologie. Le 28 février 1947, il fonde à Paris le Groupement Mondial de Cosmobiologie, qui plus tard est enregistré officiellement sous l'appellation Fédération Internationale de Sociétés Scientifiques le 25 mars 1947 avec une insertion dans le Journal Officiel sous le numéro 10022. Après la rencontre du sage Sun Wu Kung, il fonda l'actuelle Magna Fraternitas Universalis au Venezuela et dans plusieurs pays d'Amérique Latine en promouvant la Culture, la Science, l'Art et la Didactique.Il parcourt inlassablement les cinq continents en visitant 43 pays, il établit ses nobles idéaux de Tolérance, de Vérité et de Paix et pour la conception d'une nouvelle humanité, en donnant plus de 2500 conférences.",
-    image: "/images/fraternidad.png",
+    image: "/images/",
   },
   {
     titre: " - Il vécut à Nice de 1953 à 1962.",
