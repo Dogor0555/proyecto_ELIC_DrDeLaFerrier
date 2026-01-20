@@ -579,7 +579,7 @@ a {
 }
 
 .mobile-dropdown.open {
-  max-height: 500px;
+  max-height: 650;
   padding: 0.8rem;
   border-color: rgba(255, 255, 255, 0.5);
 }
@@ -2999,4 +2999,115 @@ a {
   max-width: 50%;
   max-height: 50%;
   object-fit: contain;
+}
+/*biagrafia*/
+
+/* Contenedor general */
+.timeline-container {
+  padding: 4rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* fondo oscuro tipo museo */
+}
+
+/* Título principal */
+.timeline-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #d4af37; /* color oro */
+  margin-bottom: 3rem;
+}
+
+/* Línea del timeline */
+.timeline-line {
+  position: relative;
+  border-left: 3px solid #d4af37; /* línea oro */
+  padding-left: 2rem;
+}
+
+/* Cada item del timeline */
+.timeline-item {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+/* Punto del timeline */
+.timeline-point {
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d4af37; /* punto oro */
+  border-radius: 50%;
+}
+
+/* Título de cada item */
+.timeline-item-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #d4af37; /* título oro */
+  margin-bottom: 0.75rem;
+}
+
+/* Contenido: descripción + imagen */
+.timeline-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Descripción */
+.timeline-item-description {
+  color: #666; /* gris de tus estilos */
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Imagen */
+.biographie-img {
+  width: 250px;          /* ancho más pequeño */
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 12px rgba(212, 175, 55, 0.3); /* sombra dorada suave */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.biographie-img:hover {
+  transform: scale(1.02); /* mismo efecto que tus imágenes del carousel */
+}
+
+/* Contenido en pantallas grandes: descripción + imagen lado a lado */
+@media (min-width: 768px) {
+  .timeline-item-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Botón */
+.timeline-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.timeline-button {
+  background-color: rgba(212, 175, 55, 0.9);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-button:hover {
+  background-color: #d4af37;
+  transform: scale(1.05);
 }

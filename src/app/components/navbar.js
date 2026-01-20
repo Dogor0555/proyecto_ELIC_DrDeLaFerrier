@@ -125,6 +125,7 @@ export default function Navbar() {
 
               <ul className={`dropdown-menu ${activeSubmenu === 'yoga' ? 'open' : ''}`}>
                 <li><Link href="/yoga/introduction" className="dropdown-link" onClick={closeSubmenus}>Introduction Yoga</Link></li>
+                <li><Link href="/galeria" className="dropdown-link" onClick={closeSubmenus}>Galerie</Link></li>
                 <li><Link href="/yoga/cours" className="dropdown-link" onClick={closeSubmenus}>Cours et informations</Link></li>
                 <li><Link href="/yoga/methode" className="dropdown-link" onClick={closeSubmenus}>La méthode</Link></li>
               </ul>
@@ -148,6 +149,15 @@ export default function Navbar() {
                 onClick={closeSubmenus}
               >
                 Événements historiques
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                href="/galeria" 
+                className={`nav-link ${isActive('/galeria') ? 'active' : ''}`}
+                onClick={closeSubmenus}
+              >
+                Galerie
               </Link>
             </li>
           </ul>
@@ -218,6 +228,7 @@ export default function Navbar() {
             </button>
             <ul className={`mobile-dropdown ${activeSubmenu === 'yoga' ? 'open' : ''}`}>
               <li><Link href="/yoga/introduction" className="mobile-dropdown-link" onClick={closeSubmenus}>Introduction Yoga</Link></li>
+              <li><Link href="/galeria" className="mobile-dropdown-link" onClick={closeSubmenus}>Galerie</Link></li>
               <li><Link href="/yoga/cours" className="mobile-dropdown-link" onClick={closeSubmenus}>Cours et informations</Link></li>
               <li><Link href="/yoga/methode" className="mobile-dropdown-link" onClick={closeSubmenus}>La méthode</Link></li>
             </ul>
@@ -242,6 +253,16 @@ export default function Navbar() {
               Événements historiques
             </Link>
           </li>
+          <li className="mobile-nav-item">
+            <Link 
+              href="/Galeria" 
+              className={`mobile-nav-link ${isActive('/Galeria') ? 'active' : ''}`}
+              onClick={closeSubmenus}
+            >
+              Galerie
+            </Link>
+          </li>
+
         </ul>
       </div>
     </nav>
